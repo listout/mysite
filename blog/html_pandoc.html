@@ -86,7 +86,7 @@
 </header>
 <h2 id="the-problem">The Problem</h2>
 <p>HTML is fun until is stops to.</p>
-<p>Although I have the autocompletion and <a href="https://www.emmet.io/">emmet</a>, I still don’t like writing html. <strong>I just dont</strong>. Don’t ask why?</p>
+<p>Although I have autocompletion and <a href="https://www.emmet.io/">emmet</a>, I still don’t like writing html. <strong>I just don’t</strong>. Don’t ask why.</p>
 <h2 id="the-solution">The Solution</h2>
 <p>So now we have the problem lets try and solve it.</p>
 <p>After some google-ing I fond a incredible tool called <a href="https://pandoc.org">pandoc</a>.</p>
@@ -95,26 +95,26 @@
 <blockquote>
 <p>If you need to convert files from one markup format into another, pandoc is your swiss-army knife.</p>
 </blockquote>
-<p>It can convert a variety of file types to and fro.</p>
-<p>So I got the idea of converting markdown files to html files. The raw html is not to that appealing, hence you can add css to beautify the html.</p>
+<p>Basically it can convert a variety of file types to and fro.</p>
+<p>So I had the idea of converting markdown files to html files. The raw html will not be that appealing, hence you can add <code>css</code> to beautify the html.</p>
 <h2 id="talk-is-cheap-show-me-the-code.">Talk is cheap show me the code.</h2>
 <p>Lets make some markdown. Create a markdown file, they end with a <code>.md</code> extension.</p>
 <p>Example mardown code:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu"># This is my site</span></span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu"># Lorem ipsum dolor sit</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a>Hello World</span></code></pre></div>
+<span id="cb1-3"><a href="#cb1-3"></a>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</span></code></pre></div>
 <h5 id="converting-the-file.">Converting the file.</h5>
 <div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">pandoc</span> --to html5 -s --css <span class="st">&quot;path/to/some/cssfile.css&quot;</span> -o name_of_htmlfile.html the_markdown_file.md</span></code></pre></div>
 <p>This will generate a <code>html</code> file in the current working directory that you. You can view that in text editor of your choice.</p>
-<p>Thats is. Now you have your <code>html</code> file without writing html. Infact this site is made that way.</p>
+<p>Thats is. Now you have your <code>html</code> file. Infact this site is made that way.</p>
 <p>Some tips:</p>
 <ul>
 <li>Creating a make file will help in not having to write long commands.</li>
 <li>Found this on github, it’s a great <a href="https://gist.github.com/kristopherjohnson/7466917">makfile</a></li>
 <li>I use this <a href="https://gist.github.com/killercup/5917178">css</a> but I customized it to bit.</li>
-<li>My dotfiles are on github <a href="https://github.com/listout/dotfiles">repo</a></li>
+<li>My dotfiles containing the custom make file <a href="https://github.com/listout/dotfiles">repo</a></li>
 </ul>
-<p>That being said I still do believe that having doing <code>html</code> <code>css</code> by hand will give greater customization capability, but if you are in a hurry or a lazy person like me then pandoc might be of great help. Not only html pandoc can convert to other formats like pdf and beamer presentaions.</p>
+<p>That being said I still do believe that doing <code>html</code> and <code>css</code> by hand will give greater customization capability and give your site a better look, but if you want some quick html without all the hassle or just a stubborn like me then pandoc might be of great help. Not only html pandoc can convert to other formats like pdf and beamer presentaions.</p>
 <p><a href="./blog.html">back to blog</a></p>
 </body>
 </html>
